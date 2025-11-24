@@ -45,7 +45,7 @@ const Contact = () => {
           </div>
           <div className="contact-loc">
             <img className="contact-loc-img" src={assets.linkedin} alt="" />
-            <a href="https://www.linkedin.com/in/vardhan-sinh-mandora-b42212224/">
+            <a href="https://www.linkedin.com/in/vardhan-mandora-b42212224/">
               vardhan_sinh
             </a>
           </div>
