@@ -41,7 +41,7 @@ const Contact = () => {
         "service_v6410sk",
         "template_a8ni6bm",
         e.target,
-        "pqCz261Ss0EpuiGS2"
+        "pqCz261Ss0EpuiGS2",
       )
       .then(
         (result) => {
@@ -68,7 +68,7 @@ const Contact = () => {
           });
           console.log(error.text);
           setIsSending(false);
-        }
+        },
       );
   };
 
@@ -124,7 +124,6 @@ const Contact = () => {
         </motion.div>
 
         <div className="contact-content">
-          {/* Contact Information */}
           <motion.div
             className="contact-info-card"
             initial={{ opacity: 0, x: -50 }}
@@ -213,7 +212,6 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.form
             className="contact-form-card"
             onSubmit={sendEmail}

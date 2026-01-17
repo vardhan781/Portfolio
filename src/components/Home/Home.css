@@ -1,4 +1,3 @@
-/* Home.css - Updated Quote Card Section */
 .home-container {
   min-height: 100vh;
   display: flex;
@@ -192,21 +191,19 @@
   box-shadow: var(--glow-md);
 }
 
-/* FIXED: Home Right Section */
 .home-right {
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
-  align-items: stretch; /* Changed from center to stretch */
+  align-items: stretch;
   width: 100%;
 }
 
-/* FIXED: Quote Cards */
 .home-quote-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  padding: var(--space-xl); /* Fixed padding */
+  padding: var(--space-xl);
   width: 100%;
   backdrop-filter: var(--blur-md);
   -webkit-backdrop-filter: var(--blur-md);
@@ -215,7 +212,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 220px; /* Minimum height for consistency */
+  min-height: 220px;
 }
 
 .home-quote-card::before {
@@ -298,7 +295,6 @@
   font-style: normal;
 }
 
-/* Tech Stack Section */
 .tech-stack-preview {
   width: 100%;
   background: var(--bg-card);
@@ -316,7 +312,7 @@
   justify-content: center;
 }
 
-.tech-tag {
+.tech-tag-home {
   background: rgba(56, 189, 248, 0.1);
   color: var(--accent-primary);
   padding: var(--space-xs) var(--space-md);
@@ -328,7 +324,6 @@
   white-space: nowrap;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .home-container {
     padding-top: calc(var(--header-height-scrolled) + var(--space-2xl));
@@ -480,7 +475,7 @@
     gap: var(--space-xs);
   }
 
-  .tech-tag {
+  .tech-tag-home {
     font-size: var(--text-xs);
     padding: 3px 10px;
   }
@@ -522,7 +517,6 @@
   }
 }
 
-/* Equal Height for Quote Cards */
 .home-right .home-quote-card:first-child {
   min-height: 240px;
 }
@@ -531,7 +525,6 @@
   min-height: 200px;
 }
 
-/* Animation for quote cards on hover */
 .home-quote-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--glow-lg);

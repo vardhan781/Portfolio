@@ -1,13 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Code2,
-  Terminal,
-  Sparkles,
-  Cpu,
-  Zap,
-} from "lucide-react";
+import { ArrowRight, Code2, Terminal, Sparkles, Cpu, Zap } from "lucide-react";
 import "./Home.css";
 
 const Home = () => {
@@ -228,10 +220,10 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 1.2 }}
             >
               <div className="tech-tags">
-                <span className="tech-tag">React</span>
-                <span className="tech-tag">Node.js</span>
-                <span className="tech-tag">MongoDB</span>
-                <span className="tech-tag">React Native</span>
+                <span className="tech-tag-home">React</span>
+                <span className="tech-tag-home">Node.js</span>
+                <span className="tech-tag-home">MongoDB</span>
+                <span className="tech-tag-home">React Native</span>
               </div>
             </motion.div>
           </motion.div>

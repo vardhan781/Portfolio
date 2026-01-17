@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 import { assets } from "../../assets/assets";
 import { motion } from "framer-motion";
@@ -58,7 +57,6 @@ const About = () => {
           </motion.div>
 
           <div className="about-cards-grid">
-            {/* Education Card */}
             <motion.div
               className="about-card education-card"
               initial={{ opacity: 0, x: -50 }}
@@ -129,7 +127,6 @@ const About = () => {
               </div>
             </motion.div>
 
-            {/* Tech Stack Card */}
             <motion.div
               className="about-card tech-card"
               initial={{ opacity: 0, x: 50 }}
@@ -214,7 +211,6 @@ const About = () => {
             </motion.div>
           </div>
 
-          {/* GitHub Section */}
           <motion.div
             className="github-cta"
             initial={{ opacity: 0, y: 20 }}

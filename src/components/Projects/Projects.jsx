@@ -14,7 +14,6 @@ import {
 import { FaGithub as GitHub } from "react-icons/fa";
 import "./Projects.css";
 
-// E-commerce website mockup component
 const EcommerceMockup = () => (
   <div className="mockup-ui">
     <div className="mockup-header">
@@ -43,7 +42,6 @@ const EcommerceMockup = () => (
   </div>
 );
 
-// Mobile app mockup component
 const MobileMockup = () => (
   <div className="mobile-mockup">
     <div className="mobile-frame">
@@ -83,7 +81,7 @@ const Projects = () => {
         "Real-time order tracking",
         "Product management system",
       ],
-      tech: ["React", "Node.js", "MongoDB", "Express", "Redux", "JWT"],
+      tech: ["React", "Node.js", "MongoDB", "Express", "JWT"],
       links: [
         {
           type: "live",
@@ -118,7 +116,7 @@ const Projects = () => {
         "Offline capabilities",
         "Push notifications",
       ],
-      tech: ["React Native", "Expo", "Firebase", "Redux", "JWT"],
+      tech: ["React Native", "Expo", "Node.js", "JWT"],
       links: [
         {
           type: "github",
@@ -136,7 +134,7 @@ const Projects = () => {
           type: "preview",
           icon: Smartphone,
           label: "Expo Preview",
-          url: "https://expo.dev/@vardhan_sinh/rare-fashion-app",
+          url: "https://expo.dev/accounts/vardhan_sinh",
         },
       ],
       imageComponent: <MobileMockup />,
@@ -173,7 +171,6 @@ const Projects = () => {
               viewport={{ once: true, margin: "-50px" }}
               whileHover={{ y: -10 }}
             >
-              {/* Project Image */}
               <div className="project-image">
                 <div className="image-overlay">{project.imageComponent}</div>
                 <div className="project-image-gradient"></div>
@@ -197,7 +194,6 @@ const Projects = () => {
 
                 <p className="project-description">{project.description}</p>
 
-                {/* Features List */}
                 <div className="project-features">
                   <h4 className="features-title">
                     <Shield size={16} strokeWidth={1.5} />
@@ -210,19 +206,17 @@ const Projects = () => {
                   </ul>
                 </div>
 
-                {/* Tech Stack */}
                 <div className="project-tech">
                   <h4 className="tech-title">Tech Stack</h4>
                   <div className="tech-tags">
                     {project.tech.map((tech, idx) => (
-                      <span key={idx} className="tech-tag">
+                      <span key={idx} className="tech-tag-project">
                         {tech}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                {/* Project Links */}
                 <div className="project-links">
                   {project.links.map((link, idx) => (
                     <motion.a
@@ -245,7 +239,6 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* GitHub Link */}
         <motion.div
           className="github-section"
           initial={{ opacity: 0 }}

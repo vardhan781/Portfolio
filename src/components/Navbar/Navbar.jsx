@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { Menu, User, Download, Home, Briefcase, Mail } from "lucide-react";
 import "./Navbar.css";
@@ -27,7 +27,6 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Close sidebar when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -46,7 +45,6 @@ const Navbar = () => {
       }
     };
 
-    // Handle touch outside for mobile
     const handleTouchOutside = (event) => {
       if (
         sidebarRef.current &&
@@ -62,7 +60,6 @@ const Navbar = () => {
     document.addEventListener("keydown", handleEscapeKey);
     document.addEventListener("touchstart", handleTouchOutside);
 
-    // Toggle body scroll
     if (isSidebarOpen) {
       document.body.classList.add("sidebar-open");
     } else {
@@ -192,7 +189,6 @@ const Navbar = () => {
         </motion.button>
       </motion.div>
 
-      {/* Sidebar Overlay */}
       <motion.div
         className={`sidebar-overlay ${isSidebarOpen ? "active" : ""}`}
         initial={{ opacity: 0 }}
@@ -201,7 +197,6 @@ const Navbar = () => {
         onClick={closeSidebar}
       />
 
-      {/* Enhanced Mobile Sidebar */}
       <motion.aside
         ref={sidebarRef}
         className={`sidebar ${isSidebarOpen ? "open" : ""}`}
