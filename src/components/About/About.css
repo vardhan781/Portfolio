@@ -198,10 +198,9 @@
 }
 
 .achievement-icon {
-  width: 16px;
-  height: 16px;
-  filter: brightness(0) saturate(100%) invert(66%) sepia(77%) saturate(687%)
-    hue-rotate(162deg) brightness(101%) contrast(97%);
+  color: var(--accent-primary);
+  opacity: 0.9;
+  flex-shrink: 0;
 }
 
 .achievement-item span {

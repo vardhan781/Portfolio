@@ -134,7 +134,7 @@ const Projects = () => {
           type: "preview",
           icon: Smartphone,
           label: "Expo Preview",
-          url: "https://expo.dev/accounts/vardhan_sinh",
+          url: "https://expo.dev/accounts/vardhan_sinh/projects/rare-fashion-app",
         },
       ],
       imageComponent: <MobileMockup />,

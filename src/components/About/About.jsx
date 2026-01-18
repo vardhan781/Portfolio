@@ -1,7 +1,13 @@
 import "./About.css";
 import { assets } from "../../assets/assets";
 import { motion } from "framer-motion";
-import { GraduationCap, Code2, BookOpen, ChevronRight } from "lucide-react";
+import {
+  GraduationCap,
+  Code2,
+  BookOpen,
+  ChevronRight,
+  CheckCircle,
+} from "lucide-react";
 
 const About = () => {
   const techIcons = [
@@ -101,25 +107,25 @@ const About = () => {
 
               <div className="card-achievements">
                 <div className="achievement-item">
-                  <img
-                    src={assets.bullet_arrow}
-                    alt=""
+                  <CheckCircle
+                    size={16}
+                    strokeWidth={1.5}
                     className="achievement-icon"
                   />
                   <span>Specialization in Web Technologies</span>
                 </div>
                 <div className="achievement-item">
-                  <img
-                    src={assets.bullet_arrow}
-                    alt=""
+                  <CheckCircle
+                    size={16}
+                    strokeWidth={1.5}
                     className="achievement-icon"
                   />
                   <span>Advanced Software Development</span>
                 </div>
                 <div className="achievement-item">
-                  <img
-                    src={assets.bullet_arrow}
-                    alt=""
+                  <CheckCircle
+                    size={16}
+                    strokeWidth={1.5}
                     className="achievement-icon"
                   />
                   <span>Mobile Application Development</span>
