@@ -172,61 +172,121 @@ const Home = () => {
             </motion.div>
           </motion.div>
 
-          <motion.div
-            className="home-right"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-          >
-            <motion.div
-              className="home-quote-card"
-              whileHover={{ y: -10, boxShadow: "var(--glow-lg)" }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="quote-icon-wrapper">
-                <Terminal size={24} strokeWidth={1.5} className="quote-icon" />
-              </div>
-              <p className="quote-text">
-                "Clean code always looks like it was written by someone who
-                cares."
-              </p>
-              <div className="quote-author">
-                <div className="author-line" />
-                <span>Robert C. Martin</span>
-              </div>
-            </motion.div>
+          <div className="home-right">
+            <div className="code-container">
+              <div className="code-window">
+                <div className="window-header">
+                  <div className="window-controls">
+                    <div className="window-control close"></div>
+                    <div className="window-control minimize"></div>
+                    <div className="window-control maximize"></div>
+                  </div>
+                  <div className="window-title">
+                    <Terminal size={14} />
+                    <span>developer.js</span>
+                  </div>
+                </div>
 
-            <motion.div
-              className="home-quote-card"
-              whileHover={{ y: -10, boxShadow: "var(--glow-lg)" }}
-              transition={{ duration: 0.3, delay: 0.1 }}
-            >
-              <div className="quote-icon-wrapper">
-                <Code2 size={24} strokeWidth={1.5} className="quote-icon" />
-              </div>
-              <p className="quote-text">
-                "Code is like humor. When you have to explain it, it's bad."
-              </p>
-              <div className="quote-author">
-                <div className="author-line" />
-                <span>Cory House</span>
-              </div>
-            </motion.div>
+                <div className="code-content">
+                  <div className="code-line">
+                    <span className="code-comment">
+                      // Full-Stack Developer Profile
+                    </span>
+                  </div>
+                  <div className="code-line">
+                    <span className="code-keyword">const</span>
+                    <span className="code-variable"> developer</span>
+                    <span className="code-operator"> = </span>
+                    <span className="code-bracket">{`{`}</span>
+                  </div>
 
-            <motion.div
-              className="tech-stack-preview"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-            >
-              <div className="tech-tags">
-                <span className="tech-tag-home">React</span>
-                <span className="tech-tag-home">Node.js</span>
-                <span className="tech-tag-home">MongoDB</span>
-                <span className="tech-tag-home">React Native</span>
+                  <div className="code-line code-indent">
+                    <span className="code-property">name</span>
+                    <span className="code-operator">:</span>
+                    <span className="code-string"> 'Vardhansinh'</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent">
+                    <span className="code-property">role</span>
+                    <span className="code-operator">:</span>
+                    <span className="code-string"> 'Full-Stack Developer'</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent">
+                    <span className="code-property">specialization</span>
+                    <span className="code-operator">:</span>
+                    <span className="code-string"> 'MERN Stack'</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent">
+                    <span className="code-property">techStack</span>
+                    <span className="code-operator">:</span>
+                    <span className="code-bracket"> [</span>
+                  </div>
+
+                  <div className="code-line code-indent-2">
+                    <span className="code-string">'React'</span>
+                    <span className="code-punctuation">,</span>
+                    <span className="code-string"> 'Node.js'</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent-2">
+                    <span className="code-string">'MongoDB'</span>
+                    <span className="code-punctuation">,</span>
+                    <span className="code-string"> 'Express.js'</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent-2">
+                    <span className="code-string">'React Native'</span>
+                    <span className="code-punctuation">,</span>
+                    <span className="code-string"> 'JavaScript'</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent-2">
+                    <span className="code-string">'Tailwind CSS'</span>
+                    <span className="code-punctuation">,</span>
+                    <span className="code-string"> 'Git'</span>
+                  </div>
+
+                  <div className="code-line code-indent">
+                    <span className="code-bracket">]</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent">
+                    <span className="code-property">passionate</span>
+                    <span className="code-operator">:</span>
+                    <span className="code-boolean"> true</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent">
+                    <span className="code-property">problemSolver</span>
+                    <span className="code-operator">:</span>
+                    <span className="code-boolean"> true</span>
+                    <span className="code-punctuation">,</span>
+                  </div>
+
+                  <div className="code-line code-indent">
+                    <span className="code-property">alwaysLearning</span>
+                    <span className="code-operator">:</span>
+                    <span className="code-boolean"> true</span>
+                  </div>
+
+                  <div className="code-line">
+                    <span className="code-bracket">{`}`}</span>
+                    <span className="code-punctuation">;</span>
+                  </div>
+                </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
