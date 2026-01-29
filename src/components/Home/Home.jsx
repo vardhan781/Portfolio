@@ -172,7 +172,12 @@ const Home = () => {
             </motion.div>
           </motion.div>
 
-          <div className="home-right">
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+            className="home-right"
+          >
             <div className="code-container">
               <div className="code-window">
                 <div className="window-header">
@@ -286,7 +291,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
