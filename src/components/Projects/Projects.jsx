@@ -60,7 +60,7 @@ const Projects = () => {
           type: "download",
           icon: Download,
           label: "Download APK",
-          url: "https://expo.dev/accounts/vardhan_sinh/projects/rare-fashion-app/builds/d8159f40-3297-44eb-ad5e-ff2686f03ea2",
+          url: "https://expo.dev/accounts/vardhan_sinh/projects/rare-fashion-app/builds/24f6af28-ba44-4e00-a427-04020e74daec",
         },
         {
           type: "preview",
