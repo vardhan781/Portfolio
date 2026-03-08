@@ -9,6 +9,7 @@ import {
   ExternalLink,
   Download,
   Smartphone,
+  MessageCircle,
 } from "lucide-react";
 import { FaGithub as GitHub } from "react-icons/fa";
 import "./Projects.css";
@@ -73,6 +74,42 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "Sphere - Social App",
+      description:
+        "Full-featured social media platform with posts, real-time chat, user profiles, explore feed, following feed, likes, follow/unfollow, and push notifications.",
+      tech: [
+        "React Native",
+        "Expo",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "JWT",
+      ],
+      links: [
+        {
+          type: "github",
+          icon: GitHub,
+          label: "Source Code",
+          url: "https://github.com/vardhan781/Sphere",
+        },
+        {
+          type: "download",
+          icon: Download,
+          label: "Download APK",
+          url: "https://expo.dev/accounts/vardhan_sinh/projects/Sphere/builds/abad5fd3-c017-4ec2-90b3-1507a6f06604",
+        },
+        {
+          type: "preview",
+          icon: Smartphone,
+          label: "Expo Preview",
+          url: "https://expo.dev/accounts/vardhan_sinh/projects",
+        },
+      ],
+      type: "mobile",
+    },
+    {
+      id: 4,
       title: "Movie Point",
       description:
         "Movie review platform with IMDb integration, user reviews, ratings, and admin dashboard.",
@@ -161,7 +198,7 @@ const Projects = () => {
               <div className="projects-code-line projects-code-indent">
                 <span className="projects-code-property">count</span>
                 <span className="projects-code-operator">:</span>
-                <span className="projects-code-number"> 3</span>
+                <span className="projects-code-number"> 4</span>
                 <span className="projects-code-punctuation">,</span>
               </div>
 
@@ -241,6 +278,23 @@ const Projects = () => {
               </div>
 
               <div className="projects-code-line projects-code-indent">
+                <span className="projects-code-property">realtime</span>
+                <span className="projects-code-operator">:</span>
+                <span className="projects-code-bracket"> [</span>
+              </div>
+
+              <div className="projects-code-line projects-code-indent-2">
+                <span className="projects-code-string">"Socket.io"</span>
+                <span className="projects-code-punctuation">,</span>
+                <span className="projects-code-string"> "WebSockets"</span>
+              </div>
+
+              <div className="projects-code-line projects-code-indent">
+                <span className="projects-code-bracket">]</span>
+                <span className="projects-code-punctuation">,</span>
+              </div>
+
+              <div className="projects-code-line projects-code-indent">
                 <span className="projects-code-property">payments</span>
                 <span className="projects-code-operator">:</span>
                 <span className="projects-code-bracket"> [</span>
@@ -275,6 +329,11 @@ const Projects = () => {
 
               <div className="projects-code-line projects-code-indent-2">
                 <span className="projects-code-string">"Responsive UI"</span>
+                <span className="projects-code-punctuation">,</span>
+              </div>
+
+              <div className="projects-code-line projects-code-indent-2">
+                <span className="projects-code-string">"Real-time Chat"</span>
                 <span className="projects-code-punctuation">,</span>
               </div>
 
