@@ -92,7 +92,7 @@ const About = () => {
                       August 2021 - May 2025
                     </span>
                     <span className="education-status">
-                      Expected Graduation
+                      Completed Graduation
                     </span>
                   </div>
                   <p className="education-focus">
