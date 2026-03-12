@@ -99,7 +99,6 @@
 
 .about-card:hover {
   border-color: var(--border-accent);
-  box-shadow: var(--glow-lg);
   transform: translateY(-5px);
 }
 
@@ -345,7 +344,6 @@
 
 .github-link:hover {
   background: rgba(56, 189, 248, 0.2);
-  box-shadow: var(--glow-sm);
 }
 
 @media (max-width: 1024px) {

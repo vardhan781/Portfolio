@@ -98,23 +98,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               Full-Stack Web Developer
-              <motion.span
-                className="prof-highlight"
-                animate={{
-                  boxShadow: [
-                    "0 0 0px rgba(56, 189, 248, 0)",
-                    "0 0 20px rgba(56, 189, 248, 0.4)",
-                    "0 0 0px rgba(56, 189, 248, 0)",
-                  ],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  delay: 1,
-                }}
-              >
-                &nbsp;•&nbsp;MERN Stack
-              </motion.span>
+              <span className="prof-highlight">&nbsp;•&nbsp;MERN Stack</span>
             </motion.p>
 
             <motion.p

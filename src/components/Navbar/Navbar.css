@@ -102,7 +102,6 @@
   background: rgba(56, 189, 248, 0.1);
   border-color: var(--accent-primary);
   transform: translateY(-2px);
-  box-shadow: var(--glow-sm);
 }
 
 .profile-container {
@@ -311,7 +310,6 @@
   background: rgba(56, 189, 248, 0.1);
   border-color: var(--accent-primary);
   transform: scale(1.02);
-  box-shadow: var(--glow-sm);
 }
 
 @media (max-width: 1024px) {

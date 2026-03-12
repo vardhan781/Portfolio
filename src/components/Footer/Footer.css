@@ -102,7 +102,6 @@
 .social-icon-wrapper:hover {
   border-color: var(--social-color, var(--accent-primary));
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .social-icon-wrapper:hover::before {
@@ -132,7 +131,6 @@
 
 .quote-content:hover {
   border-color: var(--border-accent);
-  box-shadow: var(--glow-sm);
 }
 
 .quote-icon-footer {
@@ -226,7 +224,6 @@
   color: var(--accent-primary);
   border-color: var(--border-accent);
   transform: translateY(-5px);
-  box-shadow: var(--glow-sm);
 }
 
 @media (max-width: 768px) {

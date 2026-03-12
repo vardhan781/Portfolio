@@ -174,7 +174,6 @@
 .home-about:hover {
   background: rgba(56, 189, 248, 0.1);
   border-color: var(--accent-primary);
-  box-shadow: var(--glow-sm);
 }
 
 .home-projects-btn {
@@ -193,7 +192,6 @@
 
 .home-projects-btn:hover {
   transform: translateY(-2px);
-  box-shadow: var(--glow-md);
 }
 
 .home-right {
@@ -210,7 +208,6 @@
   overflow: hidden;
   backdrop-filter: var(--blur-md);
   -webkit-backdrop-filter: var(--blur-md);
-  box-shadow: var(--shadow-lg);
   height: 100%;
   display: flex;
   flex-direction: column;

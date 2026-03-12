@@ -64,7 +64,6 @@
 
 .contact-info-card:hover {
   border-color: var(--border-accent);
-  box-shadow: var(--glow-lg);
 }
 
 .contact-info-header {
@@ -203,7 +202,6 @@
 
 .contact-form-card:hover {
   border-color: var(--border-accent);
-  box-shadow: var(--glow-lg);
 }
 
 .form-header {
@@ -256,12 +254,13 @@
   pointer-events: none;
   width: 18px;
   height: 18px;
+  transition: color var(--transition-base);
 }
 
 .form-input,
 .form-textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.03);
+  background: transparent;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-md) var(--space-md) var(--space-md)
@@ -269,7 +268,7 @@
   color: var(--text-primary);
   font-size: var(--text-base);
   font-family: var(--font-sans);
-  transition: all var(--transition-base);
+  transition: all 0.2s ease;
 }
 
 .form-textarea {
@@ -282,37 +281,53 @@
 .form-textarea::placeholder {
   color: var(--text-muted);
   font-size: var(--text-sm);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.form-input:hover,
+.form-textarea:hover {
+  border-color: var(--text-muted);
 }
 
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
   border-color: var(--accent-primary);
-  background: rgba(56, 189, 248, 0.05);
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+  background: rgba(56, 189, 248, 0.02);
+}
+
+.form-input:focus::placeholder,
+.form-textarea:focus::placeholder {
+  opacity: 0.5;
+}
+
+.form-input:focus ~ .input-icon,
+.form-textarea:focus ~ .input-icon {
+  color: var(--accent-primary);
 }
 
 .input-border {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--accent-gradient);
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  transform: scaleX(0);
-  transition: transform var(--transition-base);
+  display: none;
 }
 
-.form-input:focus ~ .input-border,
-.form-textarea:focus ~ .input-border {
-  transform: scaleX(1);
+.form-input:not(:placeholder-shown),
+.form-textarea:not(:placeholder-shown) {
+  border-color: var(--border-accent);
+  background: rgba(56, 189, 248, 0.02);
+}
+
+.form-input:not(:placeholder-shown) ~ .input-icon,
+.form-textarea:not(:placeholder-shown) ~ .input-icon {
+  color: var(--accent-primary);
+  opacity: 0.8;
 }
 
 .input-hint {
   font-size: var(--text-xs);
   color: var(--text-muted);
   margin-left: calc(var(--space-md) * 2 + 18px);
+  opacity: 0.8;
 }
 
 .textarea-info {
@@ -327,6 +342,7 @@
 .char-count {
   font-size: var(--text-xs);
   color: var(--text-muted);
+  opacity: 0.8;
 }
 
 .submit-button {
@@ -343,39 +359,23 @@
   font-size: var(--text-base);
   font-weight: 600;
   cursor: pointer;
-  transition: all var(--transition-base);
+  transition: all 0.2s ease;
   position: relative;
   overflow: hidden;
 }
 
 .submit-button:disabled {
-  opacity: 0.7;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
 .submit-button:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: var(--glow-md);
+  transform: translateY(-1px);
+  filter: brightness(1.1);
 }
 
 .submit-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: left 0.7s ease;
-}
-
-.submit-button:hover::before {
-  left: 100%;
+  display: none;
 }
 
 .spinner {
@@ -398,10 +398,10 @@
   align-items: center;
   gap: var(--space-xs);
   margin-top: var(--space-lg);
-  padding: var(--space-sm);
-  background: rgba(56, 189, 248, 0.05);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(56, 189, 248, 0.03);
   border-radius: var(--radius-md);
-  border: 1px solid var(--border-accent);
+  border: 1px solid rgba(56, 189, 248, 0.2);
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
@@ -409,7 +409,7 @@
 
 .form-note svg {
   color: var(--accent-primary);
-  opacity: 0.8;
+  opacity: 0.7;
   flex-shrink: 0;
 }
 
@@ -663,10 +663,6 @@
   .submit-button:hover {
     transform: none;
     box-shadow: none;
-  }
-
-  .submit-button:hover::before {
-    left: -100%;
   }
 
   .form-input,

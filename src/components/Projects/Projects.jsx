@@ -81,10 +81,8 @@ const Projects = () => {
         "React Native",
         "Expo",
         "Node.js",
-        "Express",
         "MongoDB",
         "Socket.io",
-        "JWT",
       ],
       links: [
         {
