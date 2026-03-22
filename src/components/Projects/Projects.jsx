@@ -77,13 +77,7 @@ const Projects = () => {
       title: "Sphere - Social App",
       description:
         "Full-featured social media platform with posts, real-time chat, user profiles, explore feed, following feed, likes, follow/unfollow, and push notifications.",
-      tech: [
-        "React Native",
-        "Expo",
-        "Node.js",
-        "MongoDB",
-        "Socket.io",
-      ],
+      tech: ["React Native", "Expo", "Node.js", "MongoDB", "Socket.io"],
       links: [
         {
           type: "github",
@@ -95,7 +89,7 @@ const Projects = () => {
           type: "download",
           icon: Download,
           label: "Download APK",
-          url: "https://expo.dev/accounts/vardhan_sinh/projects/Sphere/builds/abad5fd3-c017-4ec2-90b3-1507a6f06604",
+          url: "https://expo.dev/accounts/vardhan_sinh/projects/Sphere/builds/84437c1d-c6b4-48ea-a10b-00526925a3c0",
         },
         {
           type: "preview",
