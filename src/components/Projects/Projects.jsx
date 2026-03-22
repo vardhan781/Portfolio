@@ -89,7 +89,7 @@ const Projects = () => {
           type: "download",
           icon: Download,
           label: "Download APK",
-          url: "https://expo.dev/accounts/vardhan_sinh/projects/Sphere/builds/13b2310c-7a58-452a-b481-31516b4efcd2",
+          url: "https://expo.dev/accounts/vardhan_sinh/projects/Sphere/builds/ef12dbb3-b033-43fd-8a7a-b48006050c23",
         },
         {
           type: "preview",
