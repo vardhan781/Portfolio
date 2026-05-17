@@ -1,6 +1,14 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { Menu, User, Download, Home, Briefcase, Mail } from "lucide-react";
+import {
+  Menu,
+  User,
+  Download,
+  Home,
+  Briefcase,
+  Mail,
+  Building2,
+} from "lucide-react";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -96,7 +104,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const sectionIds = ["home", "projects", "about", "contact"];
+    const sectionIds = ["home", "projects", "experience", "about", "contact"];
     const observerOptions = {
       threshold: 0.3,
     };
@@ -120,6 +128,7 @@ const Navbar = () => {
   const navItems = [
     { id: "home", label: "Home", icon: Home },
     { id: "projects", label: "Work", icon: Briefcase },
+    { id: "experience", label: "Experience", icon: Building2 },
     { id: "about", label: "About", icon: User },
     { id: "contact", label: "Contact", icon: Mail },
   ];

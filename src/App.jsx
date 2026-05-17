@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
+import WorkExperience from "./components/WorkExperience/WorkExperience";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Navbar />
       <Home />
       <Projects />
+      <WorkExperience />
       <About />
       <Contact />
       <Footer />
