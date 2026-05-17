@@ -182,7 +182,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <User className="profile-icon" size={32} strokeWidth={1.5} />
+              <User className="profile-icon" size={18} strokeWidth={1.5} />
             </motion.div>
           </div>
         </div>
@@ -255,7 +255,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Download size={20} strokeWidth={1.5} />
-            Download Resume
+            Resume
           </motion.button>
         </div>
       </motion.aside>
