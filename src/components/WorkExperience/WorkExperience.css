@@ -52,21 +52,25 @@
 
 .experience-code-card {
   width: 100%;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 1.25rem;
   overflow: hidden;
-  backdrop-filter: var(--blur-md);
+  backdrop-filter: blur(18px);
+  position: relative;
 }
 
 .code-card-header {
-  background: #1e293b;
-  padding: 0.75rem 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(30, 41, 59, 0.95),
+    rgba(15, 23, 42, 0.95)
+  );
+  padding: 0.9rem 1.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  border-bottom: 1px solid #334155;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 }
 
 .code-dots {
@@ -107,17 +111,35 @@
 }
 
 .code-card-body {
-  padding: 1.25rem;
+  padding: clamp(1rem, 1.8vw, 1.5rem);
   font-family: var(--font-mono);
-  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+  line-height: 1.5;
   background: linear-gradient(135deg, #0f172a, #1e293b);
-  line-height: 1.6;
+  min-height: clamp(260px, 35vh, 340px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow-x: auto;
 }
 
 .code-line {
-  color: #cbd5e1;
   white-space: nowrap;
+  min-height: 1.4em;
+  display: block;
+}
+
+.indent-1 {
+  margin-left: clamp(1rem, 1.8vw, 1.5rem);
+}
+
+.indent-2 {
+  margin-left: clamp(2rem, 3.6vw, 3rem);
+}
+
+.code-comment {
+  color: #64748b;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -157,6 +179,7 @@
 
 .code-keyword {
   color: #38bdf8;
+  font-weight: 500;
 }
 
 .code-variable {
@@ -180,7 +203,7 @@
 }
 
 .code-punctuation {
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 
 .experience-detail-card {

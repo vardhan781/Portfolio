@@ -104,25 +104,33 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const sectionIds = ["home", "projects", "experience", "about", "contact"];
-    const observerOptions = {
-      threshold: 0.3,
+    const handleScroll = () => {
+      const sections = ["home", "projects", "experience", "about", "contact"];
+
+      const scrollPosition = window.scrollY + 150;
+
+      for (const sectionId of sections) {
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+          const offsetTop = section.offsetTop;
+          const offsetHeight = section.offsetHeight;
+
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
+            setActiveLink(sectionId);
+          }
+        }
+      }
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveLink(entry.target.id);
-        }
-      });
-    }, observerOptions);
+    window.addEventListener("scroll", handleScroll);
 
-    sectionIds.forEach((id) => {
-      const section = document.getElementById(id);
-      if (section) observer.observe(section);
-    });
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [

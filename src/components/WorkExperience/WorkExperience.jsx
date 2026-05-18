@@ -59,9 +59,9 @@ const WorkExperience = () => {
         <div className="experience-dual-layout">
           <motion.div
             className="experience-code-card"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
           >
             <div className="code-card-header">
@@ -70,80 +70,152 @@ const WorkExperience = () => {
                 <span></span>
                 <span></span>
               </div>
+
               <div className="code-file-name">
-                <Terminal size={12} />
+                <Terminal size={14} strokeWidth={1.5} />
                 <span>experience.js</span>
               </div>
             </div>
+
             <div className="code-card-body">
               <div className="code-line">
+                <span className="code-comment">
+                  // Professional Experience & Responsibilities
+                </span>
+              </div>
+
+              <div className="code-line">
                 <span className="code-keyword">const</span>
-                <span className="code-variable"> work</span>
+                <span className="code-variable"> experience</span>
                 <span className="code-operator"> = </span>
                 <span className="code-bracket">{`{`}</span>
               </div>
+
               <div className="code-line indent-1">
                 <span className="code-property">role</span>
                 <span className="code-operator">:</span>
-                <span className="code-string">"Software Developer"</span>
+                <span className="code-string"> "Software Developer"</span>
                 <span className="code-punctuation">,</span>
               </div>
+
               <div className="code-line indent-1">
                 <span className="code-property">company</span>
                 <span className="code-operator">:</span>
-                <span className="code-string">"Reveation Technologies"</span>
+                <span className="code-string"> "Reveation Technologies"</span>
                 <span className="code-punctuation">,</span>
               </div>
+
               <div className="code-line indent-1">
                 <span className="code-property">duration</span>
                 <span className="code-operator">:</span>
-                <span className="code-string">"Nov 2025 - Present"</span>
+                <span className="code-string"> "Nov 2025 - Present"</span>
                 <span className="code-punctuation">,</span>
               </div>
+
               <div className="code-line indent-1">
-                <span className="code-property">tech</span>
+                <span className="code-property">stack</span>
                 <span className="code-operator">:</span>
-                <span className="code-bracket">[</span>
+                <span className="code-bracket"> [</span>
+              </div>
+
+              <div className="code-line indent-2">
                 <span className="code-string">"React.js"</span>
                 <span className="code-punctuation">,</span>
-                <span className="code-string">"Node.js"</span>
+                <span className="code-string"> "Node.js"</span>
                 <span className="code-punctuation">,</span>
-                <span className="code-string">"MySQL"</span>
-                <span className="code-punctuation">,</span>
+                <span className="code-string"> "MySQL"</span>
+              </div>
+
+              <div className="code-line indent-2">
                 <span className="code-string">"React Native"</span>
-                <span className="code-punctuation">]</span>
-              </div>
-              <div className="code-line indent-1">
-                <span className="code-property">tasks</span>
-                <span className="code-operator">:</span>
-                <span className="code-bracket">[</span>
-              </div>
-              <div className="code-line indent-2">
-                <span className="code-string">
-                  "Full-stack web development"
-                </span>
                 <span className="code-punctuation">,</span>
-              </div>
-              <div className="code-line indent-2">
-                <span className="code-string">
-                  "ERP & subscription modules"
-                </span>
+                <span className="code-string"> "Express.js"</span>
                 <span className="code-punctuation">,</span>
+                <span className="code-string"> "REST APIs"</span>
               </div>
-              <div className="code-line indent-2">
-                <span className="code-string">"React Native mobile apps"</span>
-                <span className="code-punctuation">,</span>
-              </div>
-              <div className="code-line indent-2">
-                <span className="code-string">
-                  "API integration & optimization"
-                </span>
-              </div>
+
               <div className="code-line indent-1">
                 <span className="code-bracket">]</span>
+                <span className="code-punctuation">,</span>
               </div>
+
+              <div className="code-line indent-1">
+                <span className="code-property">modules</span>
+                <span className="code-operator">:</span>
+                <span className="code-bracket"> [</span>
+              </div>
+
+              <div className="code-line indent-2">
+                <span className="code-string">"ERP Systems"</span>
+                <span className="code-punctuation">,</span>
+              </div>
+
+              <div className="code-line indent-2">
+                <span className="code-string">"Subscription Management"</span>
+                <span className="code-punctuation">,</span>
+              </div>
+
+              <div className="code-line indent-2">
+                <span className="code-string">"Inventory Management"</span>
+                <span className="code-punctuation">,</span>
+              </div>
+
+              <div className="code-line indent-2">
+                <span className="code-string">"Role Based Access"</span>
+                <span className="code-punctuation">,</span>
+              </div>
+
+              <div className="code-line indent-2">
+                <span className="code-string">"React Native Applications"</span>
+              </div>
+
+              <div className="code-line indent-1">
+                <span className="code-bracket">]</span>
+                <span className="code-punctuation">,</span>
+              </div>
+
+              <div className="code-line indent-1">
+                <span className="code-property">architecture</span>
+                <span className="code-operator">:</span>
+                <span className="code-bracket"> [</span>
+              </div>
+
+              <div className="code-line indent-2">
+                <span className="code-string">"Router Layer"</span>
+                <span className="code-punctuation">,</span>
+                <span className="code-string"> "Repository Pattern"</span>
+              </div>
+
+              <div className="code-line indent-2">
+                <span className="code-string">"Request Mapper"</span>
+                <span className="code-punctuation">,</span>
+                <span className="code-string"> "Response Mapper"</span>
+              </div>
+
+              <div className="code-line indent-1">
+                <span className="code-bracket">]</span>
+                <span className="code-punctuation">,</span>
+              </div>
+
+              <div className="code-line indent-1">
+                <span className="code-property">status</span>
+                <span className="code-operator">:</span>
+                <span className="code-string"> "Currently Working"</span>
+              </div>
+
               <div className="code-line">
                 <span className="code-bracket">{`}`}</span>
+                <span className="code-punctuation">;</span>
+              </div>
+
+              <div className="code-line">
+                <span className="code-comment">// Exporting Experience</span>
+              </div>
+
+              <div className="code-line">
+                <span className="code-keyword">export</span>
+                <span className="code-keyword"> default</span>
+                <span className="code-variable"> experience</span>
                 <span className="code-punctuation">;</span>
               </div>
             </div>
