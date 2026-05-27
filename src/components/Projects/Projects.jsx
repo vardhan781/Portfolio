@@ -100,34 +100,6 @@ const Projects = () => {
       ],
       type: "mobile",
     },
-    {
-      id: 4,
-      title: "Movie Point",
-      description:
-        "Movie review platform with IMDb integration, user reviews, ratings, and admin dashboard.",
-      tech: ["React", "Node.js", "MongoDB", "Express", "JWT", "Nodemailer"],
-      links: [
-        {
-          type: "live",
-          icon: ExternalLink,
-          label: "Live Site",
-          url: "https://moviepoint-sleek.vercel.app",
-        },
-        {
-          type: "admin",
-          icon: Server,
-          label: "Admin Panel",
-          url: "https://moviepoint-admin.vercel.app",
-        },
-        {
-          type: "github",
-          icon: GitHub,
-          label: "Source Code",
-          url: "https://github.com/vardhan781/Movie-Point",
-        },
-      ],
-      type: "web",
-    },
   ];
 
   return (
@@ -190,7 +162,7 @@ const Projects = () => {
               <div className="projects-code-line projects-code-indent">
                 <span className="projects-code-property">count</span>
                 <span className="projects-code-operator">:</span>
-                <span className="projects-code-number"> 4</span>
+                <span className="projects-code-number"> 3</span>
                 <span className="projects-code-punctuation">,</span>
               </div>
 
