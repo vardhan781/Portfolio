@@ -117,6 +117,15 @@ body {
   background: var(--border-light);
 }
 
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+textarea {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 .container {
   width: 100%;
   max-width: var(--container-max-width);
