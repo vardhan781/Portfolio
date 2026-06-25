@@ -324,7 +324,7 @@ const Contact = () => {
               {isSending ? (
                 <>
                   <div className="spinner"></div>
-                  <span>Sending...</span>
+                  <span>Sending</span>
                 </>
               ) : (
                 <>
