@@ -89,8 +89,8 @@ const Navbar = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "resume.pdf";
+    link.href = "/Resume.pdf";
+    link.download = "Resume.pdf";
     link.click();
     closeSidebar();
   };
